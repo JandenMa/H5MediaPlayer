@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style/H5Media.css">
+    <script src="../js/ieCompatibility.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/mediaControl.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/H5Media.js" type="text/javascript" charset="utf-8"></script>
+    <title>H5Media</title>
+</head>
+
+<body>
+    <header>HTML5在线音视频播放器</header>
+    <div class="tabArea">
+        <nav>
+            <a class="active" href="javascript:void(0);" data-area="audioArea">音频播放</a>
+            <a href="javascript:void(0);" data-area="videoArea">视频播放</a>
+        </nav>
+        <div class="showArea">
+            <div id="audioArea">
+                <audio id="audioEl">
+                    您的浏览器不支持Audio标签，请升级您的浏览器！
+                </audio>
+                <br>
+                <label for="selectAudioFile">选择音频文件：</label>
+                <input type="file" id="selectAudioFile" name="selectAudioFile" accept="audio/*" data-type="audio/*" />
+                <div>
+                    <label for="AudioProgress">进度：</label>
+                    <input type="range" name="AudioProgress" id="AudioProgress" min="0" max="100" step="1" value="0">
+                    <span id="AudioProgressVal"></span>
+                </div>
+                <button id="AudioToggleBtn">播放/暂停</button>
+                <button id="AudioStopBtn">停止</button>
+                <button id="AudioLoopBtn">单曲循环：关</button>
+                <button id="AudioMutedBtn">静音：否</button>
+                <div>
+                    <label for="AudioVolume">音量：</label>
+                    <input type="range" name="AudioVolume" id="AudioVolume" min="0" max="100" step="1" value="50">
+                    <span id="AudioVolumeVal"></span>%
+                </div>
+            </div>
+            <div id="videoArea" style="display: none" controls>
+                <video id="videoEl" height="300px" >
+                    您的浏览器不支持Audio标签，请升级您的浏览器！
+                </video>
+                <br>
+                <label for="selectVideoFile">选择视频文件：</label>
+                <input type="file" id="selectVideoFile" name="selectVideoFile" accept="video/*" data-type="video/*" />
+                <div>
+                    <label for="VideoProgress">进度：</label>
+                    <input type="range" name="VideoProgress" id="VideoProgress" min="0" max="100" step="1" value="0">
+                    <span id="VideoProgressVal"></span>
+                </div>
+                <button id="VideoToggleBtn">播放/暂停</button>
+                <button id="VideoStopBtn">停止</button>
+                <button id="VideoLoopBtn">单曲循环：关</button>
+                <button id="VideoMutedBtn">静音：否</button>
+                <div>
+                    <label for="VideoVolume">音量：</label>
+                    <input type="range" name="VideoVolume" id="VideoVolume" min="0" max="100" step="1" value="50">
+                    <span id="VideoVolumeVal"></span>%
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

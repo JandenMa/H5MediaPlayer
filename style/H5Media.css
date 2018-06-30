@@ -1,0 +1,51 @@
+header{
+	margin: 5px 0;
+	width: 100%;
+	color:#fff;
+	background-color: #2c2c2c;
+	text-align: center;
+	font-size: 24px;
+	height: 80px;
+	line-height: 80px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.tabArea{
+	box-sizing: border-box;
+	margin: 25px;
+}
+
+.tabArea nav{
+	display: flex;
+	background-color: #2c2c2c;
+	text-align: center;
+}
+
+a{
+	border-left: 2px solid #fff;
+	text-decoration: none;
+	color:#fff!important;
+	display: block;
+	width: 50%;
+	padding: 15px 0;
+}
+
+a:first-child{
+	border-left: none;
+}
+
+a.active{
+	background: #6c6c6c;
+}
+
+.showArea{
+	border: 1px solid #4c4c4c;
+	clear: both;
+}
+
+.showArea div {
+    padding: 10px;
+    text-align: center;
+}
